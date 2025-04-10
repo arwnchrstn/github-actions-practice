@@ -24,6 +24,7 @@ jobs:
   job4:
     name: Depends on three jobs
     runs-on: ubuntu-latest
+    needs: [job1, job2, job3]
     steps:
       - name: Wait for three jobs
         run: echo "Success!"
