@@ -1,4 +1,4 @@
-name: first
+name: Challenge
 
 on: [push]
 
@@ -14,7 +14,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Print date
-        run: date /t
+        run: date
   job3:
     name: Print date using MacOS
     runs-on: macos-latest
