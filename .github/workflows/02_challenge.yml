@@ -1,0 +1,29 @@
+name: first
+
+on: [push]
+
+jobs:
+  job1:
+    name: Print date in ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print date
+        run: echo date
+  job2:
+    name: Print date in windows
+    runs-on: windows-latest
+    steps:
+      - name: Print date
+        run: echo %date%
+  job3:
+    name: Print date using MacOS
+    runs-on: macos-latest
+    steps:
+      - name: Print date
+        run: date
+  job4:
+    name: Depends on three jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for three jobs
+        run: echo "Success!"
