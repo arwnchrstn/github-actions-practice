@@ -19,4 +19,4 @@ jobs:
   custom-action:
     runs-on: ubuntu-latest
     steps:
-      - uses: arwnchrstn/github-actions-practice@custom-action
+      - uses: arwnchrstn/github-actions-practice@custom_action
