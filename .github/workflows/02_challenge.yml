@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print date
-        run: echo date
+        run: echo ${date}
   job2:
     name: Print date in windows
     runs-on: windows-latest
     steps:
       - name: Print date
-        run: echo %date%
+        run: echo ${%date%}
   job3:
     name: Print date using MacOS
     runs-on: macos-latest
